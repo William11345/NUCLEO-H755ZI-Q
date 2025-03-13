@@ -1104,17 +1104,17 @@ static void MX_TIM1_Init(void)
  8000a60:	4b45      	ldr	r3, [pc, #276]	@ (8000b78 <MX_TIM1_Init+0x158>)
  8000a62:	4a46      	ldr	r2, [pc, #280]	@ (8000b7c <MX_TIM1_Init+0x15c>)
  8000a64:	601a      	str	r2, [r3, #0]
-  htim1.Init.Prescaler = 100;
+  htim1.Init.Prescaler = 4;
  8000a66:	4b44      	ldr	r3, [pc, #272]	@ (8000b78 <MX_TIM1_Init+0x158>)
- 8000a68:	2264      	movs	r2, #100	@ 0x64
+ 8000a68:	2204      	movs	r2, #4
  8000a6a:	605a      	str	r2, [r3, #4]
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
  8000a6c:	4b42      	ldr	r3, [pc, #264]	@ (8000b78 <MX_TIM1_Init+0x158>)
  8000a6e:	2200      	movs	r2, #0
  8000a70:	609a      	str	r2, [r3, #8]
-  htim1.Init.Period = 100;
+  htim1.Init.Period = 19;
  8000a72:	4b41      	ldr	r3, [pc, #260]	@ (8000b78 <MX_TIM1_Init+0x158>)
- 8000a74:	2264      	movs	r2, #100	@ 0x64
+ 8000a74:	2213      	movs	r2, #19
  8000a76:	60da      	str	r2, [r3, #12]
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
  8000a78:	4b3f      	ldr	r3, [pc, #252]	@ (8000b78 <MX_TIM1_Init+0x158>)
@@ -1187,8 +1187,8 @@ static void MX_TIM1_Init(void)
   sConfigOC.OCMode = TIM_OCMODE_PWM1;
  8000ae8:	2360      	movs	r3, #96	@ 0x60
  8000aea:	633b      	str	r3, [r7, #48]	@ 0x30
-  sConfigOC.Pulse = 50;
- 8000aec:	2332      	movs	r3, #50	@ 0x32
+  sConfigOC.Pulse = 10;
+ 8000aec:	230a      	movs	r3, #10
  8000aee:	637b      	str	r3, [r7, #52]	@ 0x34
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
  8000af0:	2300      	movs	r3, #0
