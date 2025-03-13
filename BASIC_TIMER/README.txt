@@ -1,0 +1,1 @@
+this is a basic use of timer on the stm32h755zi-q i put random value only put 50/50 cycle but see doc1 for the real value obtained by analog discovery 2
