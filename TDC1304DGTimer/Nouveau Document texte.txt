@@ -1,0 +1,3 @@
+this code is to drive the tdc1304dg 
+this setup isint compleate some small tweaking are neaded 
+i need to ouse a better oscioscope then the analog discovery 2
